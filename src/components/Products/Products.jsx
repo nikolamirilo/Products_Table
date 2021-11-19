@@ -18,14 +18,6 @@ const Products = () => {
     return uniqueProduct;
   };
 
-  products.map((product) => {
-    if (product.weight_currency === "kg") {
-      return (product.weight = product.weight * 1000);
-    } else {
-      return product.weight;
-    }
-  });
-
   const sortedProducts = getUniqueProduct(products, "name").sort(function (a, b) {
     return b.weight - a.weight;
   });
@@ -38,18 +30,23 @@ const Products = () => {
           <th>Amount</th>
           <th>Unit price</th>
         </tr>
-        {sortedProducts.map((product) => {
-          return (
-            <tr className="product" key={product.id}>
-              <td className="product-name">{product.name}</td>
-              <td className="product-weight">{product.weight}g</td>
-              <td className="product-price">
-                {product.price_currency}
-                {product.price}
-              </td>
-            </tr>
-          );
-        })}
+        {sortedProducts
+          .sort((a, b) => (a.weight_currency > b.weight_currency ? -1 : 1))
+          .map((product) => {
+            return (
+              <tr className="product" key={product.id}>
+                <td className="product-name">{product.name}</td>
+                <td className="product-weight">
+                  {product.weight}
+                  {product.weight_currency}
+                </td>
+                <td className="product-price">
+                  {product.price_currency}
+                  {product.price}
+                </td>
+              </tr>
+            );
+          })}
       </table>
     </div>
   );
