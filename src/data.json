@@ -1,0 +1,140 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Orange",
+      "weight": 75,
+      "weight_currency": "kg",
+      "price": 3.12,
+      "price_currency": "$"
+    },
+    {
+      "id": 2,
+      "name": "Cherry",
+      "weight": 220,
+      "weight_currency": "g",
+      "price": 11,
+      "price_currency": "$"
+    },
+    {
+      "id": 3,
+      "name": "Grape",
+      "weight": 750,
+      "weight_currency": "g",
+      "price": 11,
+      "price_currency": "$"
+    },
+    {
+      "id": 4,
+      "name": "Kiwi",
+      "weight": 900,
+      "weight_currency": "g",
+      "price": 11,
+      "price_currency": "$"
+    },
+    {
+      "id": 5,
+      "name": "Banana",
+      "weight": 643,
+      "weight_currency": "g",
+      "price": 120,
+      "price_currency": "$"
+    },
+    {
+      "id": 6,
+      "name": "Apple (green)",
+      "weight": 25,
+      "weight_currency": "kg",
+      "price": 42,
+      "price_currency": "$"
+    },
+    {
+      "id": 7,
+      "name": "Orange",
+      "weight": 75,
+      "weight_currency": "kg",
+      "price": 3.12,
+      "price_currency": "$"
+    },
+    {
+      "id": 8,
+      "name": "Pear",
+      "weight": 1.12,
+      "weight_currency": "kg",
+      "price": 0.995,
+      "price_currency": "$"
+    },
+    {
+      "id": 9,
+      "name": "Apple",
+      "weight": 3,
+      "weight_currency": "kg",
+      "price": 1,
+      "price_currency": "$"
+    },
+    {
+      "id": 10,
+      "name": "Corn",
+      "weight": 620,
+      "weight_currency": "g",
+      "price": 1.1,
+      "price_currency": "$"
+    },
+    {
+      "id": 11,
+      "name": "Clementine",
+      "weight": 776,
+      "weight_currency": "g",
+      "price": 66,
+      "price_currency": "$"
+    },
+    {
+      "id": 12,
+      "name": "Banana",
+      "weight": 1.12,
+      "weight_currency": "kg",
+      "price": 100,
+      "price_currency": "$"
+    },
+    {
+      "id": 13,
+      "name": "Pineaple",
+      "weight": 14,
+      "weight_currency": "kg",
+      "price": 1.1,
+      "price_currency": "$"
+    },
+    {
+      "id": 14,
+      "name": "Lemon",
+      "weight": 1.1,
+      "weight_currency": "kg",
+      "price": 0.5,
+      "price_currency": "$"
+    },
+    {
+      "id": 15,
+      "name": "Pear",
+      "weight": 870,
+      "weight_currency": "g",
+      "price": 6,
+      "price_currency": "$"
+    },
+    {
+      "id": 16,
+      "name": "Watermelon",
+      "weight": 7.5,
+      "weight_currency": "kg",
+      "price": 0.95,
+      "price_currency": "$"
+    },
+    {
+      "id": 17,
+      "name": "Red grapes",
+      "weight": 1.5,
+      "weight_currency": "kg",
+      "price": 6.6,
+      "price_currency": "$"
+    }
+  ]
+}

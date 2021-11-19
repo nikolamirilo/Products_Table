@@ -1,0 +1,20 @@
+.products-table {
+  padding: 5% 20%;
+}
+
+.products-table table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.products-table td,
+.products-table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.products-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
