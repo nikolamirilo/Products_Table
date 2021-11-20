@@ -19,7 +19,7 @@ const Products = () => {
   };
 
   const sortedProducts = getUniqueProduct(products, "name").sort(function (a, b) {
-    return b.weight - a.weight;
+    return b.price - a.price;
   });
 
   return (
@@ -30,30 +30,28 @@ const Products = () => {
           <th>Amount</th>
           <th>Unit price</th>
         </tr>
-        {sortedProducts
-          .sort((a, b) => (a.weight_currency > b.weight_currency ? -1 : 1))
-          .map((product) => {
-            if (
-              (product.weight > 750 && product.weight_currency === "g") ||
-              (product.weight > 0.75 && product.weight_currency === "kg")
-            ) {
-              return (
-                <tr className="product" key={product.id}>
-                  <td className="product-name">{product.name}</td>
-                  <td className="product-weight">
-                    {product.weight}
-                    {product.weight_currency}
-                  </td>
-                  <td className="product-price">
-                    {product.price_currency}
-                    {product.price}
-                  </td>
-                </tr>
-              );
-            } else {
-              return null;
-            }
-          })}
+        {sortedProducts.map((product) => {
+          if (
+            (product.weight > 750 && product.weight_currency === "g") ||
+            (product.weight > 0.75 && product.weight_currency === "kg")
+          ) {
+            return (
+              <tr className="product" key={product.id}>
+                <td className="product-name">{product.name}</td>
+                <td className="product-weight">
+                  {product.weight}
+                  {product.weight_currency}
+                </td>
+                <td className="product-price">
+                  {product.price_currency}
+                  {product.price}
+                </td>
+              </tr>
+            );
+          } else {
+            return null;
+          }
+        })}
       </table>
     </div>
   );
