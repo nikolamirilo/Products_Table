@@ -33,19 +33,26 @@ const Products = () => {
         {sortedProducts
           .sort((a, b) => (a.weight_currency > b.weight_currency ? -1 : 1))
           .map((product) => {
-            return (
-              <tr className="product" key={product.id}>
-                <td className="product-name">{product.name}</td>
-                <td className="product-weight">
-                  {product.weight}
-                  {product.weight_currency}
-                </td>
-                <td className="product-price">
-                  {product.price_currency}
-                  {product.price}
-                </td>
-              </tr>
-            );
+            if (
+              (product.weight > 750 && product.weight_currency === "g") ||
+              (product.weight > 0.75 && product.weight_currency === "kg")
+            ) {
+              return (
+                <tr className="product" key={product.id}>
+                  <td className="product-name">{product.name}</td>
+                  <td className="product-weight">
+                    {product.weight}
+                    {product.weight_currency}
+                  </td>
+                  <td className="product-price">
+                    {product.price_currency}
+                    {product.price}
+                  </td>
+                </tr>
+              );
+            } else {
+              return null;
+            }
           })}
       </table>
     </div>
